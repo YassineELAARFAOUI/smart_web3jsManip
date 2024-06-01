@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@4.8.0/dist/web3.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Donation project</h1>
+        <div>
+            <p id="yourAddressElm">0x331642B001a761B252d5271b938d224569081C9C</p>
+            <button id="connectMetaMaskBtn">connect wallet</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>List of Donations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Donator address</th>
+                        <th>Amount ETH</th>
+                    </tr>
+                </thead>
+                <tbody id="mytbody">
+                   
+                </tbody>
+            </table>
+           <div class="donate">
+            <input type="number" id="amountInput" placeholder="Amount in Wei">
+            <button id="donateBtn">Donate</button>
+           </div>
+           <div id="amountDiv"></div>
+        </section>
+        <section>
+            <h2>Configuration</h2>
+            <ul>
+                <li>
+                    <div >Status</div>
+                    <div id="statusElement">In progress</div>
+                </li>
+                <li>
+                    <div>Receipient</div>
+                    <div id="receipientElement">0x331642B001a761B252d5271b938d224569081C9C</div>
+                </li>
+                <li>
+                    <div>Target</div>
+                    <div id="seuilElement"></div>
+                </li>
+                <li>
+                    <div>Amount collected</div>
+                    <div id="blanceElement">50 ETH</div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Pr. TMIMI Mehdi</p>
+        <p>Tp blockchain - solidity & web3.js @uemf 2024</p>
+    </footer>
+</body>
+
+</html>
